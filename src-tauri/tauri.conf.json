@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Phase Launcher",
+  "version": "0.1.0",
+  "identifier": "PhaseLauncher",
+  "build": {
+    "beforeDevCommand": "bun run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Phase Launcher",
+        "width": 1200,
+        "height": 680,
+        "minWidth": 960,
+        "minHeight": 560,
+        "decorations": false,
+        "resizable": true,
+        "maximizable": true,
+        "fullscreen": false,
+        "shadow": true,
+        "label": "main"
+      }
+    ],
+    "security": {
+      "csp": null,
+      "assetProtocol": {
+        "enable": true,
+        "scope": ["**"]
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/icon.ico"]
+  },
+  "plugins": {
+    "deep-link": {
+      "desktop": {
+        "schemes": ["com.epicgames.fortnite"]
+      }
+    }
+  }
+}

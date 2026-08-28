@@ -1,1 +1,1 @@
-Polyester Spiderman Type shit - but cooler
+Update Shi for Ch3 S1

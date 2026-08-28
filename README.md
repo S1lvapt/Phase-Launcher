@@ -1,1 +1,2 @@
-Update Shi for Ch3 S1
+Update Shi for Ch3 S1.
+
